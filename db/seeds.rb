@@ -67,6 +67,7 @@ event_categories.each do |category|
       event.location = event_location
       event.capacity = event_capacity
       event.price = event_price
+      event.remote_image_url = "https://picsum.photos/800/600"
       event.organizer = event_organizer
       event.event_category = category
       event.admin = admin_para_eventos     

@@ -87,6 +87,13 @@ GEM
     brakeman (7.0.2)
       racc
     builder (3.3.0)
+    carrierwave (3.1.2)
+      activemodel (>= 6.0.0)
+      activesupport (>= 6.0.0)
+      addressable (~> 2.6)
+      image_processing (~> 1.1)
+      marcel (~> 1.0.0)
+      ssrf_filter (~> 1.0)
     concurrent-ruby (1.3.5)
     connection_pool (2.5.3)
     crass (1.0.6)
@@ -322,6 +329,7 @@ GEM
       net-sftp (>= 2.1.2)
       net-ssh (>= 2.8.0)
       ostruct
+    ssrf_filter (1.3.0)
     stringio (3.1.7)
     thor (1.3.2)
     thruster (0.1.13)
@@ -360,13 +368,14 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   brakeman
+  carrierwave
   debug
   devise
   devise_token_auth
   down
   faker
-  image_processing (~> 1.2)
   kamal
+  mini_magick
   pg (~> 1.1)
   puma (>= 5.0)
   rack-cors
