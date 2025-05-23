@@ -2,7 +2,7 @@ module Api
   module V1
     module Admin
       class EventsController < ApplicationController
-        # before_action :authenticate_admin! # para garantir que o usuário está autenticado como admin
+        before_action :authenticate_admin! # para garantir que o usuário está autenticado como admin
         before_action :set_event, only: [:show, :update, :destroy]
 
         # GET /api/v1/admin/events
