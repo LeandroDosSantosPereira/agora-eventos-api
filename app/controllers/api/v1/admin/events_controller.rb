@@ -7,7 +7,7 @@ module Api
 
         # GET /api/v1/admin/events
         def index
-          @events = Event.all
+          @events = Event.where(admin_id: current_admin.id)
           render json: @events
         end
 
