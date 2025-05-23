@@ -69,15 +69,7 @@ event_categories.each do |category|
       event.price = event_price
       event.organizer = event_organizer
       event.event_category = category
-      event.admin = admin_para_eventos 
-
-      begin
-        image_url_unsplash = "https://picsum.photos/800/600"
-        event.image.attach(io: Down.open(image_url_unsplash), filename: "event_#{category.name.parameterize}_#{i}.jpg")
-        puts "   - Imagem anexada para #{event.title}"
-      rescue Down::Error => e
-        puts "   - Erro ao baixar imagem para #{event.title}: #{e.message}"
-      end
+      event.admin = admin_para_eventos     
     end
     puts "- Criado evento: '#{event_title}'"
   end
