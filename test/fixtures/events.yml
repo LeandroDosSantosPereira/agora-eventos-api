@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyText
+  date: 2025-05-22
+  time: 2025-05-22 23:17:39
+  location: MyString
+  image_url: MyString
+  capacity: 1
+  price: 9.99
+  organizer: MyString
+  event_category: one
+  admin: one
+
+two:
+  title: MyString
+  description: MyText
+  date: 2025-05-22
+  time: 2025-05-22 23:17:39
+  location: MyString
+  image_url: MyString
+  capacity: 1
+  price: 9.99
+  organizer: MyString
+  event_category: two
+  admin: two
