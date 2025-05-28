@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :admin do
         resources :events
+        resources :event_categories, only: [:index] 
       end
     end
   end
