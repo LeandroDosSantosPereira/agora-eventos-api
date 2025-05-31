@@ -10,6 +10,7 @@ class CreateEvents < ActiveRecord::Migration[8.0]
       t.integer :capacity
       t.decimal :price
       t.string :organizer
+      t.string :slug
       t.references :event_category, null: false, foreign_key: true
       t.references :admin, null: false, foreign_key: true
 
